@@ -6,8 +6,8 @@ function randomRGB() {
 }
 
 const letters = document.querySelectorAll('.letter');
-const intervalid = setInterval(function (){
+const intervalId = setInterval(function () {
     for (let letter of letters) {
-        letter.computedStyleMap.color = randomRGB();
+        letter.style.color = randomRGB();
     }
-}, 2000);
+}, 1000);
